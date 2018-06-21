@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title','微博') - 随时随地发现新鲜事</title>
     <link rel="stylesheet" href="/css/app.css">
+    <link rel="shortcut icon" href="/imgs/weibo_logo.ico" type="image/x-icon" />
 </head>
 <body>
     @include('layouts._header')

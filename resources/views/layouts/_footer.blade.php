@@ -1,7 +1,7 @@
 <div class="col-md-12">
     <footer class="footer">
         <small class="slogon">
-            <img src="/public/imgs/weibo.jpg" class="brand-icon">
+            <img src="/imgs/weibo_logo.ico" class="brand-icon">
             <a href="{{ route('home') }}">
                 随时随地发现新鲜
             </a>
