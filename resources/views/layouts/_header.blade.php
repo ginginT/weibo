@@ -4,8 +4,8 @@
             <a href="{{ route('home') }}" id="logo">微 博</a>
             <nav>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="{{ route('help') }}">帮助</a></li>
-                    <li><a href="#">登录</a></li>
+                    <li><a href="{{ route('help') }}" style="color: #fff">帮助</a></li>
+                    <li><a href="#" style="color: #fff">登录</a></li>
                 </ul>
             </nav>
         </div>

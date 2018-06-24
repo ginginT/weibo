@@ -12,10 +12,10 @@
 <body>
     @include('layouts._header')
     <div class="container">
-        <div class="col-md-offset-1 col-md-10">
+        <div class="bg">
             @yield('content')
-            @include('layouts._footer')
         </div>
+            @include('layouts._footer')
     </div>
 </body>
 </html>
