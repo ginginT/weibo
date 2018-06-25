@@ -12,10 +12,13 @@
 <body>
     @include('layouts._header')
     <div class="container">
+        @include('shared._messages')
         <div class="bg">
             @yield('content')
         </div>
-            @include('layouts._footer')
+        @include('layouts._footer')
     </div>
+
+    <script src="/js/app.js"></script>
 </body>
 </html>
