@@ -52,7 +52,10 @@ class UsersController extends Controller
 
     public function show(User $user)
     {
-        return view('users.show', compact('user'));
+        $statuses = $user->statuses()
+                         ->orderBy('created_at','desc')
+                         ->paginate(30);
+        return view('users.show', compact('user','statuses'));
     }
 
     public function edit(User $user)
@@ -110,10 +113,5 @@ class UsersController extends Controller
         Auth::login($user);
         session()->flash('success', '恭喜您，激活成功！');
         return redirect()->route('users.show', [$user]);
-    }
-
-    public function sendPasswordResetNotification($token)
-    {
-
     }
 }
